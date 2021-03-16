@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+    <script>
+        let number2= parseInt(prompt('Nhập số cần tính giai thừa'))
+        let giatriGiathua=1
+        for (let i=2;i<=number2; i++){
+            if (number2==0 || number2==1) {
+              giatriGiathua=1;
+            }else{
+                giatriGiathua=giatriGiathua*i;
+            }
+        }
+        document.write(giatriGiathua);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In day finonaci</title>
+</head>
+<body>
+
+<script>
+
+    let pt1=1;
+    let pt2=1;
+
+    let ptcong1 = 1;
+    let ptcong2 = 1
+
+    let n = parseInt(prompt('luong so can in ra'))
+    if (n>=3){
+        document.write(pt1 + '&#160;&#160;&#160;');
+        document.write(pt2 + '&#160;&#160;&#160;');
+        for (let i=3; i<=n; i++){
+            pt=ptcong1+ptcong2;
+            document.write(pt + '&#160;&#160;&#160;');
+            ptcong1=ptcong2;
+            ptcong2=pt;
+        }
+    }else if (n==2){
+        document.write(pt1 + '&#160;&#160;&#160;');
+        document.write(pt2 + '&#160;&#160;&#160;');
+    }else {
+        document.write(pt1 + '&#160;&#160;&#160;');
+    }
+</script>
+
+</body>
+</html>
